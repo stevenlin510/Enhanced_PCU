@@ -5,7 +5,7 @@
 # @Email       : ruihuili@gmail.com
 
 import tensorflow as tf
-from Common import ops
+from functions import ops
 
 class Discriminator(object):
     def __init__(self, opts,is_training, name="Discriminator"):

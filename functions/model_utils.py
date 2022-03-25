@@ -10,7 +10,7 @@ import numpy as np
 
 
 def get_model_cls(model_name):
-    modellib = import_module('.'.join(('Upsampling', 'generator')))
+    modellib = import_module('.'.join(('models', 'generator')))
     for name, cls in modellib.__dict__.items():
         if name.lower() == model_name.lower():
             model_cls = cls

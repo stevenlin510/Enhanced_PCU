@@ -1,4 +1,4 @@
-# Enhanced Point Cloud Upsampling via Multi-branch Network and Attention Fusion
+# Enhanced Point Cloud models via Multi-branch Network and Attention Fusion
 [COSITE 2021](https://ic-cosite.org/) | [Paper](https://ieeexplore.ieee.org/document/9649506)
 
 ### Preparation
@@ -43,20 +43,20 @@ If our work and the repo are useful for your research, please consider citing:
 
     @InProceedings{Qian_2021_CVPR,
         author    = {Qian, Guocheng and Abualshour, Abdulellah and Li, Guohao and Thabet, Ali and Ghanem, Bernard},
-        title     = {PU-GCN: Point Cloud Upsampling Using Graph Convolutional Networks},
+        title     = {PU-GCN: Point Cloud models Using Graph Convolutional Networks},
         booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
         month     = {June},
         year      = {2021},
         pages     = {11683-11692}
     }
     @inproceedings{li2019pugan,
-         title={PU-GAN: a Point Cloud Upsampling Adversarial Network},
+         title={PU-GAN: a Point Cloud models Adversarial Network},
          author={Li, Ruihui and Li, Xianzhi and Fu, Chi-Wing and Cohen-Or, Daniel and Heng, Pheng-Ann},
          booktitle = {{IEEE} International Conference on Computer Vision ({ICCV})},
          year = {2019}
      }
     @INPROCEEDINGS{Lin_Enhanced_PCU,  
-        title={Enhanced Point Cloud Upsampling using Multi-branch Network and Attention Fusion},
+        title={Enhanced Point Cloud models using Multi-branch Network and Attention Fusion},
         author={Yeh, Chia-Hung and Lin, Wei-Cheng},  
         booktitle={2021 International Conference on Computer System, Information Technology, and Electrical Engineering (COSITE)},
         year={2021}, 

@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(BASE_DIR)
 
 # Draw point cloud
-from Common.eulerangles import euler2mat
+from functions.eulerangles import euler2mat
 
 # Point cloud IO
 import numpy as np

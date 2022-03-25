@@ -7,9 +7,9 @@ import re
 import csv
 from collections import OrderedDict
 import os
-from Common import pc_util
-from Common.pc_util import load
-from Common.ops import normalize_point_cloud
+from functions import pc_util
+from functions.pc_util import load
+from functions.ops import normalize_point_cloud
 from tf_ops.nn_distance import tf_nndistance
 from sklearn.neighbors import NearestNeighbors
 import math

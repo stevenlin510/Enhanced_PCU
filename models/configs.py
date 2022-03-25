@@ -28,9 +28,9 @@ def generate_exp_directory(FLAGS):
         pathlib.Path(FLAGS.log_dir).mkdir(parents=True, exist_ok=True)
         pathlib.Path(FLAGS.code_dir).mkdir(parents=True, exist_ok=True)
         # ===> save scripts
-        shutil.copytree('Common', os.path.join(FLAGS.code_dir, 'Common'))
+        shutil.copytree('functions', os.path.join(FLAGS.code_dir, 'functions'))
         shutil.copytree('tf_lib', os.path.join(FLAGS.code_dir, 'tf_lib'))
-        shutil.copytree('Upsampling', os.path.join(FLAGS.code_dir, 'Upsampling'))
+        shutil.copytree('models', os.path.join(FLAGS.code_dir, 'models'))
 
 
 def configure_logger(FLAGS):

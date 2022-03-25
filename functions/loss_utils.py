@@ -13,7 +13,7 @@ sys.path.append(os.path.dirname(os.getcwd()))
 from tf_ops.nn_distance import tf_nndistance
 from tf_ops.approxmatch import tf_approxmatch
 
-from Common import pc_util
+from functions import pc_util
 from tf_ops.grouping.tf_grouping import query_ball_point, group_point, knn_point, knn_point_2
 from tf_ops.sampling.tf_sampling import gather_point, farthest_point_sample
 import numpy as np

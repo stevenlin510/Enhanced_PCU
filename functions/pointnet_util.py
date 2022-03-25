@@ -9,7 +9,7 @@ from tf_ops.grouping.tf_grouping import query_ball_point, group_point, knn_point
 from tf_ops.interpolation.tf_interpolate import three_nn, three_interpolate
 import tensorflow as tf
 import numpy as np
-from Common import ops
+from functions import ops
 
 
 def sample_and_group(npoint, radius, nsample, xyz, points, tnet_spec=None, knn=False, use_xyz=True):

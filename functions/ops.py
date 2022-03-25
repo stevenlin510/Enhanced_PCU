@@ -39,7 +39,7 @@ def mlp_conv(inputs,
 
 
 def up_block(inputs, up_ratio, scope='up_block', is_training=True, bn_decay=None):
-    from Common.model_utils import gen_grid
+    from functions.model_utils import gen_grid
     with tf.variable_scope(scope, reuse=tf.AUTO_REUSE):
         net = inputs
         dim = inputs.shape[-1]

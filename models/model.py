@@ -6,13 +6,13 @@
 # Modified by Wei-Cheng Lin
 
 import tensorflow as tf
-from Upsampling.discriminator import Discriminator
-from Common.visu_utils import plot_pcd_three_views, point_cloud_three_views
-from Common.ops import add_scalar_summary, add_hist_summary
-from Upsampling.data_loader import Fetcher
-from Common import model_utils
-from Common import pc_util
-from Common.loss_utils import pc_distance, get_uniform_loss, get_repulsion_loss, discriminator_loss, generator_loss
+from models.discriminator import Discriminator
+from functions.visu_utils import plot_pcd_three_views, point_cloud_three_views
+from functions.ops import add_scalar_summary, add_hist_summary
+from models.data_loader import Fetcher
+from functions import model_utils
+from functions import pc_util
+from functions.loss_utils import pc_distance, get_uniform_loss, get_repulsion_loss, discriminator_loss, generator_loss
 from tf_ops.sampling.tf_sampling import farthest_point_sample
 import logging
 import os
@@ -22,7 +22,7 @@ import math
 from time import time
 from termcolor import colored
 import numpy as np
-from Common.model_utils import get_model_cls
+from functions.model_utils import get_model_cls
 
 
 class Model(object):
@@ -114,7 +114,7 @@ class Model(object):
             self.visualize_x_titles = ['input_x', 'fake_y', 'real_y']
             self.visualize_x_ops = [self.input_x[0], self.G_y[0], self.input_y[0]]
             self.image_x_merged = tf.placeholder(tf.float32, shape=[None, 1500, 1500, 1])
-            self.image_x_summary = tf.summary.image('Upsampling', self.image_x_merged, max_outputs=1)
+            self.image_x_summary = tf.summary.image('models', self.image_x_merged, max_outputs=1)
 
     def setup_optimizer(self):
         learning_rate_g = tf.where(

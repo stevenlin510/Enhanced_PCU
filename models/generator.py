@@ -5,13 +5,13 @@
 # Modified by Wei-Cheng Lin
 
 import tensorflow as tf
-from Common import ops
+from functions import ops
 from tf_ops.sampling.tf_sampling import gather_point, farthest_point_sample
-from Common.pointnet_util import pointnet_sa_module, pointnet_fp_module
+from functions.pointnet_util import pointnet_sa_module, pointnet_fp_module
 
 class PUGCN(object):
     """
-    PU-GCN: Point Cloud Upsampling using Graph Convolutional Networks
+    PU-GCN: Point Cloud models using Graph Convolutional Networks
     https://arxiv.org/abs/1912.03264.pdf
     """
 

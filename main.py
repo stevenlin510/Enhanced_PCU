@@ -1,6 +1,6 @@
 import tensorflow as tf
-from Upsampling.model import Model
-from Upsampling.configs import FLAGS, configure_logger
+from model.model import Model
+from model.configs import FLAGS, configure_logger
 import os
 import logging
 import shutil
