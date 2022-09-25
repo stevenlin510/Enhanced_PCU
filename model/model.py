@@ -125,7 +125,7 @@ class Inception_GCN(nn.Module):
 class up_block(nn.Module):
     def __init__(self, opt, channels=None):
         super().__init__()
-        self.grid = gen_grid(opt.up_ratio).unsqueeze(0).cuda()
+        self.grid = gen_grid(opt.up_ratio).unsqueeze(0).to(opt.device)
         self.in_channels = channels + 2
         self.conv1 = nn.Sequential(
             nn.Conv2d(self.in_channels, opt.feature_dim, kernel_size=1),

@@ -13,7 +13,7 @@ def knn(x, k):
     
     dist = pairwise_distance.topk(k=k, dim=-1)[0]
     idx = pairwise_distance.topk(k=k, dim=-1)[1]   # (batch_size, num_points, k)
-    return dist.to('cuda'), idx.to('cuda')
+    return dist.to(device), idx.to(device)
 
 
 def get_graph_feature(x, k=20, idx=None, dim9=False):
@@ -26,7 +26,7 @@ def get_graph_feature(x, k=20, idx=None, dim9=False):
         else:
             _, idx = knn(x[:, 6:], k=k)
 
-    idx_base = torch.arange(0, batch_size, device='cuda').view(-1, 1, 1)*num_points
+    idx_base = torch.arange(0, batch_size, device=device).view(-1, 1, 1)*num_points
 
     idx = idx + idx_base
 

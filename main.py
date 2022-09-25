@@ -42,8 +42,8 @@ def step(phase, opt, dataloader, model, optimizer=None, epoch=None):
 
         if phase == 'train':
             input_pc, gt_pc, radius = data # B, N, C
-            input_pc = input_pc.cuda()
-            gt_pc = gt_pc.cuda()
+            input_pc = input_pc.to(opt.device)
+            gt_pc = gt_pc.to(opt.device)
 
             input_pc = input_pc.transpose(2, 1).contiguous()
             output = model(input_pc)
