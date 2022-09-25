@@ -12,7 +12,7 @@ conda create -n epcu python=3.7
 conda activate epcu
 pip install -r requirements.txt
 ```
-- Download the PU1k dataset from [PU-GCN](https://github.com/guochengqian/PU-GCN) and PUGAN dataset [PU-GAN](https://github.com/liruihui/PU-GAN)
+- Download the [PU1K](https://github.com/guochengqian/PU-GCN) dataset and [PU-GAN](https://github.com/liruihui/PU-GAN) dataset. 
 
 ## Train
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
     python main.py --train 
     ```
 
-## Test 
+## Inference
 
 - ```shell
     mkdir <output_data_dir> 
