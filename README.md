@@ -1,7 +1,7 @@
-# Enhanced Point Cloud Upsampling via Multi-branch Network and Attention Fusion
+# Enhanced Point Cloud Upsampling using Multi-branch Network and Attention Fusion
 [COSITE 2021](https://ic-cosite.org/) | [Paper](https://ieeexplore.ieee.org/document/9649506)
 
-- This is an official **Pytorch** implentation for **Enhanced Point Cloud Upsampling via Multi-branch Network and Attention Fusion** by Wei-Cheng Lin. 
+- This is an official **Pytorch** implentation for **Enhanced Point Cloud Upsampling using Multi-branch Network and Attention Fusion** by Wei-Cheng Lin. 
 
 ## Preparation
 
