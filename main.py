@@ -9,7 +9,7 @@ import torch.utils.data
 import torch.optim as optim
 from torchsummary import summary
 from common import pc_util
-from common.data import PUDataset, PUDataset_TEST
+from common.data import PUDataset
 from common.config import opts
 from common.utils import save_model_epoch, save_xyz_file, farthest_point_sample
 from common.loss import AccumLoss, repulsion_loss, chamferloss
