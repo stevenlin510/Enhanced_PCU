@@ -48,8 +48,8 @@ If our work and the repo are useful for your research, please consider citing:
 ## Acknowledgement
 
 Thanks for the authors sharing their code.
-[PU-GAN](https://github.com/liruihui/PU-GAN)
-[PU-GCN](https://github.com/guochengqian/PU-GCN)
-[PUGAN-Pytorch](https://github.com/UncleMEDM/PUGAN-pytorch/)
-[Chamder-distance](https://github.com/otaheri/chamfer_distance)
-[DGCNN](https://github.com/WangYueFt/dgcnn)
+* [PU-GAN](https://github.com/liruihui/PU-GAN)
+* [PU-GCN](https://github.com/guochengqian/PU-GCN)
+* [PUGAN-Pytorch](https://github.com/UncleMEDM/PUGAN-pytorch/)
+* [Chamder-distance](https://github.com/otaheri/chamfer_distance)
+* [DGCNN](https://github.com/WangYueFt/dgcnn)
