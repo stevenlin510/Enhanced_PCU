@@ -165,9 +165,10 @@ class Auxiliary_network(nn.Module):
                 nn.BatchNorm2d(512),
                 nn.GELU(),
         )
+        self.pooling = nn.AdaptiveMaxPool2d((1, 1))
     def forward(self, x):
         x1 = self.mlp(x)
-        x1 = torch.max(x1, dim=2, keepdim=True)[0]
+        x1 = self.pooling(x1)
         output = x1.repeat(1, 1, x.shape[2]*self.up_ratio, 1)
         return output
 
