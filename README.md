@@ -17,16 +17,17 @@ pip install -r requirements.txt
 ## Train
 
 - Check the `config.py` file before run the training.
-    ```shell
-    python main.py --train 
-    ```
+
+```shell
+python main.py --train 
+```
 
 ## Inference
 
-- ```shell
-    mkdir <output_data_dir> 
-    python main.py --resume <model.pth> --eval_dir <in_data_dir> --out_dir <output_data_dir> 
-    ```
+```shell
+mkdir <output_data_dir> 
+python main.py --resume <model.pth> --eval_dir <in_data_dir> --out_dir <output_data_dir> 
+```
 
 ## Evaluation
 
@@ -36,7 +37,7 @@ pip install -r requirements.txt
 
 If our work and the repo are useful for your research, please consider citing:
 
-    @INPROCEEDINGS{Lin_Enhanced_PCU,  
+@INPROCEEDINGS{Lin_Enhanced_PCU,  
         title={Enhanced Point Cloud Upsampling using Multi-branch Network and Attention Fusion},
         author={Yeh, Chia-Hung and Lin, Wei-Cheng},  
         booktitle={2021 International Conference on Computer System, Information Technology, and Electrical Engineering (COSITE)},
